@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volkswagen Simulator | Индустриальная экономика</title>
+    <title>Volkswagen Simulator | Industrial Economics</title>
     <style>
         * {
             box-sizing: border-box;
@@ -23,7 +23,7 @@
             position: relative;
         }
 
-        /* Логотип Volkswagen в левом верхнем углу */
+        /* Logo in top-left corner */
         .top-left-logo {
             position: absolute;
             top: 25px;
@@ -33,7 +33,7 @@
             object-fit: contain;
         }
 
-        /* Шапка сайта */
+        /* Header */
         header {
             text-align: center;
             margin-top: 40px;
@@ -68,7 +68,7 @@
             margin: 0 auto;
         }
 
-        /* Сетка для 5 кнопок */
+        /* Grid for 5 buttons */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -78,7 +78,7 @@
             justify-content: center;
         }
 
-        /* Стиль карточки-кнопки */
+        /* Button card style */
         .card {
             background: #ffffff;
             border: 1px solid #e2e8f0;
@@ -111,7 +111,7 @@
             color: #001e50;
         }
 
-        /* Эффект оживания при наведении */
+        /* Hover animation */
         .card:hover {
             transform: translateY(-8px) scale(1.03);
             box-shadow: 0 16px 32px rgba(0, 30, 80, 0.12);
@@ -122,7 +122,7 @@
             transform: scale(1.1);
         }
 
-        /* Подвал */
+        /* Footer */
         footer {
             margin-top: auto;
             font-size: 14px;
@@ -134,52 +134,52 @@
 </head>
 <body>
 
-    <!-- Логотип Volkswagen в левом верхнем углу -->
+    <!-- Volkswagen Logo -->
     <img src="vw-logo.png" alt="Volkswagen" class="top-left-logo">
 
-    <!-- Шапка -->
+    <!-- Header -->
     <header>
-        <span class="badge">Образовательный портал</span>
+        <span class="badge">Educational Portal</span>
         <h1>Volkswagen Educational Simulator</h1>
-        <p class="subtitle">Интерактивный учебный комплекс по курсу «Индустриальная экономика»<br>Almaty Management University (AlmaU)</p>
+        <p class="subtitle">Interactive Learning Complex for Industrial Economics<br>Almaty Management University (AlmaU)</p>
     </header>
 
-    <!-- Основной блок с 5 кнопками -->
+    <!-- 5 Buttons Grid -->
     <main class="grid-container">
-        <!-- Кнопка 1: Кейсы -->
+        <!-- Button 1: Cases -->
         <a href="cases.html" class="card">
-            <img src="pic-case-vw.png" alt="Кейсы">
-            <h3>Кейсы & Опыт</h3>
+            <img src="pic-case-vw.png" alt="Cases">
+            <h3>Cases & Experience</h3>
         </a>
 
-        <!-- Кнопка 2: Отчеты -->
+        <!-- Button 2: Reports -->
         <a href="reports.html" class="card">
-            <img src="pic-rep-vw.png" alt="Отчеты">
-            <h3>Отчеты</h3>
+            <img src="pic-rep-vw.png" alt="Reports">
+            <h3>Reports</h3>
         </a>
 
-        <!-- Кнопка 3: Прогнозы -->
+        <!-- Button 3: Forecasts -->
         <a href="forecasts.html" class="card">
-            <img src="pic-story-vw.png" alt="Прогнозы">
-            <h3>Прогнозы & Дилеммы</h3>
+            <img src="pic-story-vw.png" alt="Forecasts">
+            <h3>Forecasts & Dilemmas</h3>
         </a>
 
-        <!-- Кнопка 4: Материалы для чтения -->
+        <!-- Button 4: Articles & Videos -->
         <a href="articles.html" class="card">
-            <img src="pic-read-vw.png" alt="Материалы">
-            <h3>Статьи и видео</h3>
+            <img src="pic-read-vw.png" alt="Materials">
+            <h3>Articles & Videos</h3>
         </a>
 
-        <!-- Кнопка 5: Сам Симулятор -->
+        <!-- Button 5: Simulator -->
         <a href="vw.en.new.html" class="card">
-            <img src="pic-sim-vw.png" alt="Симулятор">
-            <h3>Сам симулятор</h3>
+            <img src="pic-sim-vw.png" alt="Simulator">
+            <h3>The Simulator</h3>
         </a>
     </main>
 
-    <!-- Подвал -->
+    <!-- Footer -->
     <footer>
-        <p>© Almaty Management University | Кафедра экономики и бизнес-дисциплин</p>
+        <p>© Almaty Management University | Department of Economics and Business Disciplines</p>
     </footer>
 
 </body>
