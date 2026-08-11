@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volkswagen Simulator | Industrial Economics</title>
+    <title>Industrial Economics Simulator | AlmaU</title>
     <style>
         * {
             box-sizing: border-box;
@@ -134,13 +134,13 @@
 </head>
 <body>
 
-    <!-- Volkswagen Logo -->
-    <img src="vw-logo.png" alt="Volkswagen" class="top-left-logo">
+    <!-- Logo -->
+    <img src="vw-logo.png" alt="Logo" class="top-left-logo">
 
     <!-- Header -->
     <header>
         <span class="badge">Educational Portal</span>
-        <h1>Volkswagen Educational Simulator</h1>
+        <h1>Industrial Economics Simulator</h1>
         <p class="subtitle">Interactive Learning Complex for Industrial Economics<br>Almaty Management University (AlmaU)</p>
     </header>
 
