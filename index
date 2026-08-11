@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volkswagen Simulator | Индустриальная экономика</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 30px 20px;
+            position: relative;
+        }
+
+        /* Логотип Volkswagen в левом верхнем углу */
+        .top-left-logo {
+            position: absolute;
+            top: 25px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        /* Шапка сайта */
+        header {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #f0f4f8;
+            color: #001e50;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #001e50;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #555555;
+            max-width: 650px;
+            line-height: 1.5;
+            margin: 0 auto;
+        }
+
+        /* Сетка для 5 кнопок */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Стиль карточки-кнопки */
+        .card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #2d3748;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                        box-shadow 0.3s ease, 
+                        border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .card h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #001e50;
+        }
+
+        /* Эффект оживания при наведении */
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 16px 32px rgba(0, 30, 80, 0.12);
+            border-color: #001e50;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Подвал */
+        footer {
+            margin-top: auto;
+            font-size: 14px;
+            color: #718096;
+            padding-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Логотип Volkswagen в левом верхнем углу -->
+    <img src="vw-logo.png" alt="Volkswagen" class="top-left-logo">
+
+    <!-- Шапка -->
+    <header>
+        <span class="badge">Образовательный портал</span>
+        <h1>Volkswagen Educational Simulator</h1>
+        <p class="subtitle">Интерактивный учебный комплекс по курсу «Индустриальная экономика»<br>Almaty Management University (AlmaU)</p>
+    </header>
+
+    <!-- Основной блок с 5 кнопками -->
+    <main class="grid-container">
+        <!-- Кнопка 1: Кейсы -->
+        <a href="cases.html" class="card">
+            <img src="pic-case-vw.png" alt="Кейсы">
+            <h3>Кейсы & Опыт</h3>
+        </a>
+
+        <!-- Кнопка 2: Отчеты -->
+        <a href="reports.html" class="card">
+            <img src="pic-rep-vw.png" alt="Отчеты">
+            <h3>Отчеты</h3>
+        </a>
+
+        <!-- Кнопка 3: Прогнозы -->
+        <a href="forecasts.html" class="card">
+            <img src="pic-story-vw.png" alt="Прогнозы">
+            <h3>Прогнозы & Дилеммы</h3>
+        </a>
+
+        <!-- Кнопка 4: Материалы для чтения -->
+        <a href="articles.html" class="card">
+            <img src="pic-read-vw.png" alt="Материалы">
+            <h3>Статьи и видео</h3>
+        </a>
+
+        <!-- Кнопка 5: Сам Симулятор -->
+        <a href="vw.en.new.html" class="card">
+            <img src="pic-sim-vw.png" alt="Симулятор">
+            <h3>Сам симулятор</h3>
+        </a>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>© Almaty Management University | Кафедра экономики и бизнес-дисциплин</p>
+    </footer>
+
+</body>
+</html>
