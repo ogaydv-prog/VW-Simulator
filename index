@@ -28,8 +28,8 @@
             position: absolute;
             top: 25px;
             left: 30px;
-            width: 60px;
-            height: 60px;
+            width: 55px;
+            height: 55px;
             object-fit: contain;
         }
 
@@ -98,8 +98,8 @@
         }
 
         .card img {
-            width: 80px;
-            height: 80px;
+            width: 64px;
+            height: 64px;
             margin-bottom: 20px;
             object-fit: contain;
             transition: transform 0.3s ease;
@@ -134,8 +134,8 @@
 </head>
 <body>
 
-    <!-- Logo -->
-    <img src="vw-logo.png" alt="Logo" class="top-left-logo">
+    <!-- Volkswagen Logo via Direct Web Link -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg" alt="VW Logo" class="top-left-logo">
 
     <!-- Header -->
     <header>
@@ -148,31 +148,31 @@
     <main class="grid-container">
         <!-- Button 1: Cases -->
         <a href="cases.html" class="card">
-            <img src="pic-case-vw.png" alt="Cases">
+            <img src="https://img.icons8.com/fluency/96/briefcase.png" alt="Cases">
             <h3>Cases & Experience</h3>
         </a>
 
         <!-- Button 2: Reports -->
         <a href="reports.html" class="card">
-            <img src="pic-rep-vw.png" alt="Reports">
+            <img src="https://img.icons8.com/fluency/96/combo-chart.png" alt="Reports">
             <h3>Reports</h3>
         </a>
 
         <!-- Button 3: Forecasts -->
         <a href="forecasts.html" class="card">
-            <img src="pic-story-vw.png" alt="Forecasts">
+            <img src="https://img.icons8.com/fluency/96/idea.png" alt="Forecasts">
             <h3>Forecasts & Dilemmas</h3>
         </a>
 
         <!-- Button 4: Articles & Videos -->
         <a href="articles.html" class="card">
-            <img src="pic-read-vw.png" alt="Materials">
+            <img src="https://img.icons8.com/fluency/96/news.png" alt="Materials">
             <h3>Articles & Videos</h3>
         </a>
 
         <!-- Button 5: Simulator -->
         <a href="vw.en.new.html" class="card">
-            <img src="pic-sim-vw.png" alt="Simulator">
+            <img src="https://img.icons8.com/fluency/96/settings.png" alt="Simulator">
             <h3>The Simulator</h3>
         </a>
     </main>
