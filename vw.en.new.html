@@ -58,6 +58,7 @@
         .vw-logo {
             width: 48px;
             height: 48px;
+            object-fit: contain;
             filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.6));
         }
 
@@ -97,7 +98,7 @@
             flex: 1;
         }
 
-      /* SIDEBAR / CONTROLS (Выровнен по высоте с графиками) */
+        /* SIDEBAR / CONTROLS */
         .sidebar {
             width: 380px;
             background: var(--panel-bg);
@@ -107,8 +108,8 @@
             display: flex;
             flex-direction: column;
             gap: 18px;
-            height: 100%;           /* Автоматически занимает 100% высоты ровно до нижней грани графика */
-            min-height: 480px;      /* Задает прочную базовую высоту */
+            height: 100%;
+            min-height: 480px;
             overflow-y: auto;
         }
         .sidebar-header-blue {
@@ -148,7 +149,6 @@
             color: var(--text-main);
         }
 
-        /* Color classes for controls */
         .color-red { color: var(--accent-red) !important; }
         .color-green { color: var(--accent-green) !important; }
         .color-blue { color: var(--accent-blue) !important; }
@@ -160,7 +160,6 @@
             font-weight: bold;
         }
 
-        /* Vintage Sliders with RED Vertical Line in Thumb */
         input[type=range] {
             -webkit-appearance: none;
             width: 100%;
@@ -190,7 +189,6 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.9);
         }
 
-        /* MAIN CONTENT AREA */
         .main-content {
             flex: 1;
             display: flex;
@@ -403,7 +401,6 @@
             text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
         }
 
-        /* ANALYSIS BOX (FULL WIDTH BOTTOM PANEL) */
         .analysis-card {
             width: 100%;
             background: var(--panel-bg);
@@ -441,15 +438,8 @@
 
     <header>
         <div class="header-brand">
-            <!-- Volkswagen Logo (SVG) -->
-            <svg class="vw-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="46" stroke="#93c5fd" stroke-width="5"/>
-                <circle cx="50" cy="50" r="40" stroke="#005b96" stroke-width="3"/>
-                <path d="M28 32L41 68H46L35 32H28Z" fill="#ffffff"/>
-                <path d="M72 32L59 68H54L65 32H72Z" fill="#ffffff"/>
-                <path d="M42 32L50 55L58 32H65L53 68H47L35 32H42Z" fill="#ffffff"/>
-                <path d="M50 63L43 80H57L50 63Z" fill="#ffffff"/>
-            </svg>
+            <!-- Volkswagen Logo (Web SVG with Fallback) -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg" alt="VW Logo" class="vw-logo">
             <div class="header-title">
                 <h1>Volkswagen AG — Strategic Industrial Simulator (2026–2030)</h1>
                 <p>Macroeconomic Transformation, Cost Structure & Industrial Policy Modeling (BMWK / Lower Saxony Framework)</p>
@@ -635,20 +625,18 @@
             </div>
         </div>
 
-        <!-- EXPLANATION CARD (NOW FULL WIDTH BOTTOM PANEL) -->
+        <!-- EXPLANATION CARD -->
         <div class="analysis-card" id="analysis-text">
             Calculating model dynamics...
         </div>
     </div>
 
     <script>
-        // Global Chart Defaults
         Chart.defaults.color = '#9ca3af';
         Chart.defaults.borderColor = '#232733';
         Chart.defaults.font.family = "'Inter', sans-serif";
 
         let charts = {};
-
         const years = ['2026', '2027', '2028', '2029', '2030'];
 
         function initCharts() {
@@ -767,7 +755,6 @@
         }
 
         function calculateModel() {
-            // Read Slider Values
             const jobsCut = parseInt(document.getElementById('s-jobs').value);
             const plantsClosed = parseInt(document.getElementById('s-plants').value);
             const modelsCut = parseInt(document.getElementById('s-models').value);
@@ -777,7 +764,6 @@
             const ecoIndex = parseInt(document.getElementById('s-eco').value);
             const aiLevel = parseInt(document.getElementById('s-ai').value);
 
-            // Update UI Labels
             document.getElementById('v-jobs').innerText = jobsCut + 'k staff';
             document.getElementById('v-plants').innerText = plantsClosed + ' plants';
             document.getElementById('v-models').innerText = '-' + modelsCut + '%';
@@ -788,7 +774,6 @@
             const aiText = ['Low', 'Moderate', 'High', 'Aggressive', 'Full AI Integration'];
             document.getElementById('v-ai').innerText = aiText[aiLevel - 1];
 
-            // Simulation Math Arrays
             let dataFinanceMargin = [], dataFinanceProfit = [];
             let dataCapCapacity = [], dataCapSales = [];
             let dataSocialJobs = [], dataSocialConflict = [];
@@ -797,9 +782,8 @@
             let dataEsgPenalties = [], dataEsgInvest = [];
 
             for (let i = 0; i < 5; i++) {
-                let t = i / 4; // timeline 0 to 1
+                let t = i / 4;
 
-                // 1. Finance Calculations
                 let savingsFromJobs = (jobsCut * 0.08) * t; 
                 let savingsFromPlants = (plantsClosed * 0.6) * t;
                 let savingsFromLineup = (modelsCut * 0.04) * t;
@@ -817,19 +801,16 @@
                 dataFinanceMargin.push(currentMargin.toFixed(2));
                 dataFinanceProfit.push(currentProfit);
 
-                // 2. Capacity Calculations
                 let baseCap = 10.0 - (plantsClosed * 0.25 * t);
                 let baseSales = 8.5 + (chinaTrend * 0.03 * t) - (modelsCut * 0.01 * t);
                 dataCapCapacity.push(baseCap.toFixed(2));
                 dataCapSales.push(baseSales.toFixed(2));
 
-                // 3. Social Calculations
                 let currentJobs = 657 - (jobsCut * t);
                 let conflictLevel = Math.min(100, Math.max(10, (jobsCut * 0.8) + (plantsClosed * 12) - (currentMargin * 3)));
                 dataSocialJobs.push(currentJobs.toFixed(0));
                 dataSocialConflict.push(conflictLevel.toFixed(0));
 
-                // 4. Markets
                 let chinaVol = Math.max(1.0, 2.6 * (1 + (chinaTrend/100) * t));
                 let europeVol = 3.2 - (tariffs * 0.02);
                 let usaVol = 1.4 - (tariffs * 0.05);
@@ -839,19 +820,16 @@
                 dataUSA.push(usaVol.toFixed(2));
                 dataRow.push(rowVol.toFixed(2));
 
-                // 5. Lineup
                 let currentBev = Math.min(90, 20 + (bevShare - 20) * (t + 0.1));
                 dataBev.push(currentBev.toFixed(1));
                 dataIce.push((100 - currentBev).toFixed(1));
 
-                // 6. ESG
                 let penalties = Math.max(0.2, (ecoIndex * 0.5) - (currentBev * 0.04)).toFixed(2);
                 let invest = (2.0 + (bevShare * 0.05) + (aiLevel * 0.2)).toFixed(2);
                 dataEsgPenalties.push(penalties);
                 dataEsgInvest.push(invest);
             }
 
-            // Update Charts
             charts.finance.data.datasets[0].data = dataFinanceMargin;
             charts.finance.data.datasets[1].data = dataFinanceProfit;
             charts.finance.update();
@@ -874,7 +852,6 @@
             charts.lineup.data.datasets[1].data = dataIce;
             charts.lineup.update();
 
-            // Update Gauge & Needle
             charts.gauge.data.datasets[0].data = [bevShare, 100 - bevShare];
             charts.gauge.update();
             
@@ -886,7 +863,6 @@
             charts.esg.data.datasets[1].data = dataEsgInvest;
             charts.esg.update();
 
-            // Narrative Text Output
             updateNarrative(dataFinanceMargin[4], jobsCut, plantsClosed, chinaTrend, tariffs, dataSocialConflict[4]);
         }
 
@@ -920,7 +896,6 @@
             event.target.classList.add('active');
         }
 
-        // Event Listeners
         document.querySelectorAll('input[type=range]').forEach(s => {
             s.addEventListener('input', calculateModel);
         });
