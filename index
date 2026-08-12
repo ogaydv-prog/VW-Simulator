@@ -147,32 +147,32 @@
     <!-- 5 Buttons Grid -->
     <main class="grid-container">
         <!-- Button 1: Cases -->
-        <a href="cases.html" class="card">
-            <img src="pic-case-vw.png" alt="Cases">
+        <a href="https://ogaydv-prog.github.io/ie-simulator-almau/cases.html" class="card">
+            <img src="https://ogaydv-prog.github.io/ie-simulator-almau/pic-case-vw.png" alt="Cases">
             <h3>Cases & Experience</h3>
         </a>
 
         <!-- Button 2: Reports -->
-        <a href="reports.html" class="card">
-            <img src="pic-rep-vw.png" alt="Reports">
+        <a href="https://ogaydv-prog.github.io/ie-simulator-almau/reports.html" class="card">
+            <img src="https://ogaydv-prog.github.io/ie-simulator-almau/pic-rep-vw.png" alt="Reports">
             <h3>Reports</h3>
         </a>
 
         <!-- Button 3: Forecasts -->
-        <a href="forecasts.html" class="card">
-            <img src="pic-read-vw.png" alt="Forecasts">
+        <a href="https://ogaydv-prog.github.io/ie-simulator-almau/forecasts.html" class="card">
+            <img src="https://ogaydv-prog.github.io/ie-simulator-almau/pic-read-vw.png" alt="Forecasts">
             <h3>Forecasts & Dilemmas</h3>
         </a>
 
         <!-- Button 4: Articles & Videos -->
-        <a href="articles.html" class="card">
-            <img src="pic-story-vw.png" alt="Articles & Videos">
+        <a href="https://ogaydv-prog.github.io/ie-simulator-almau/articles.html" class="card">
+            <img src="https://ogaydv-prog.github.io/ie-simulator-almau/pic-story-vw.png" alt="Articles & Videos">
             <h3>Articles & Videos</h3>
         </a>
 
         <!-- Button 5: Simulator -->
-        <a href="vw.en.new.html" class="card">
-            <img src="pic-sim-vw.png" alt="Simulator">
+        <a href="https://ogaydv-prog.github.io/ie-simulator-almau/vw.en.new.html" class="card">
+            <img src="https://ogaydv-prog.github.io/ie-simulator-almau/pic-sim-vw.png" alt="Simulator">
             <h3>The Simulator</h3>
         </a>
     </main>
