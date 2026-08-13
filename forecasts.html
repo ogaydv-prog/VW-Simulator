@@ -23,7 +23,7 @@
         }
 
         .top-bar {
-            max-width: 1200px;
+            max-width: 1350px;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -54,7 +54,7 @@
 
         header {
             text-align: center;
-            margin-bottom: 45px;
+            margin-bottom: 40px;
         }
 
         .badge {
@@ -84,12 +84,25 @@
             margin: 0 auto;
         }
 
+        /* Grid for 8 Articles (Strictly 2 rows of 4 items on desktop) */
         .articles-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 25px;
-            max-width: 1200px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+            max-width: 1350px;
             width: 100%;
+        }
+
+        @media (max-width: 1200px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .article-card {
@@ -110,7 +123,7 @@
         }
 
         .card-header {
-            padding: 20px 24px 10px 24px;
+            padding: 18px 20px 8px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -131,25 +144,25 @@
         .tag-vw { background: #f1f5f9; color: #0f172a; }
 
         .card-body {
-            padding: 10px 24px 20px 24px;
+            padding: 8px 20px 20px 20px;
             flex: 1;
             display: flex;
             flex-direction: column;
         }
 
         .article-title {
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 700;
             color: #0f172a;
             line-height: 1.35;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .article-excerpt {
-            font-size: 13.5px;
+            font-size: 13px;
             color: #475569;
-            line-height: 1.5;
-            margin-bottom: 20px;
+            line-height: 1.45;
+            margin-bottom: 18px;
             flex: 1;
         }
 
@@ -159,12 +172,12 @@
             justify-content: center;
             gap: 8px;
             width: 100%;
-            padding: 12px;
+            padding: 11px;
             background-color: #001e50;
             color: #ffffff;
             text-decoration: none;
             font-weight: 600;
-            font-size: 13.5px;
+            font-size: 13px;
             border-radius: 10px;
             transition: background 0.2s ease;
         }
@@ -197,100 +210,101 @@
         <p class="subtitle">Strictly up-to-date 2026 collection on Volkswagen Group's historic industrial restructuring, shareholder demands, and China market pressures.</p>
     </header>
 
+    <!-- Grid with 8 Cards (4 columns x 2 rows) -->
     <main class="articles-grid">
 
-        <!-- Article 1: CNBC Africa / Market Report -->
+        <!-- Article 1 -->
         <article class="article-card">
             <div class="card-header">
                 <span class="publisher-tag tag-cnbc">CNBC Business</span>
             </div>
             <div class="card-body">
                 <h2 class="article-title">Volkswagen controlling families call for faster overhaul to fend off Chinese rivals</h2>
-                <p class="article-excerpt">August 2026 report detailing messages from top investors and family shareholders pushing management for the most radical overhaul in the firm's history.</p>
+                <p class="article-excerpt">August 2026 report detailing messages from top investors and family shareholders pushing management for radical restructuring.</p>
                 <a href="https://www.cnbcafrica.com/2026/volkswagen-controlling-families-call-for-faster-overhaul-to-fend-off-chinese-rivals" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
-        <!-- Article 2: The Guardian -->
+        <!-- Article 2 -->
         <article class="article-card">
             <div class="card-header">
                 <span class="publisher-tag tag-guardian">The Guardian</span>
             </div>
             <div class="card-body">
                 <h2 class="article-title">VW chief confirms plan to cut 50,000 jobs as board rejects plant closures</h2>
-                <p class="article-excerpt">July 2026 inside coverage of CEO Oliver Blume outlining the massive restructuring blueprint amidst supervisory board friction and nationwide staff protests.</p>
+                <p class="article-excerpt">July 2026 inside coverage of CEO Oliver Blume outlining restructuring blueprints amidst supervisory board friction.</p>
                 <a href="https://www.theguardian.com/business/2026/jul/13/vw-cut-jobs-board-rejects-plant-closures-staff-restructuring" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
-        <!-- Article 3: The Guardian (Profits & China Slump) -->
+        <!-- Article 3 -->
         <article class="article-card">
             <div class="card-header">
                 <span class="publisher-tag tag-guardian">The Guardian</span>
             </div>
             <div class="card-body">
                 <h2 class="article-title">Mass job cuts loom at VW as profits fall steeply on China sales slump</h2>
-                <p class="article-excerpt">July 2026 financial update on Volkswagen's steep profit drop, revenue forecast cuts, and targets to eliminate up to 100,000 roles globally.</p>
+                <p class="article-excerpt">July 2026 financial update on Volkswagen's profit drop, revenue forecast cuts, and targets to eliminate roles globally.</p>
                 <a href="https://www.theguardian.com/business/2026/jul/24/vw-profits-plunge-and-deep-job-cuts-loom-amid-tough-chinese-competition" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
-        <!-- Article 4: Global Banking & Finance Review -->
+        <!-- Article 4 -->
         <article class="article-card">
             <div class="card-header">
                 <span class="publisher-tag tag-gbaf">GBAF Analysis</span>
             </div>
             <div class="card-body">
                 <h2 class="article-title">Volkswagen CEO Eyes Power Shift with Major Job Cuts and Restructuring</h2>
-                <p class="article-excerpt">June/July 2026 strategic review analyzing potential spin-offs of passenger car divisions and testing the limits of the Volkswagen Law regarding Lower Saxony.</p>
+                <p class="article-excerpt">Mid-2026 strategic review analyzing potential spin-offs and testing the limits of the Volkswagen Law regarding Lower Saxony.</p>
                 <a href="https://www.globalbankingandfinance.com/analysis-volkswagen-ceo-targets-power-shift-alongside-deep/" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
-        <!-- Article 5: Automotive Manufacturing Solutions -->
+        <!-- Article 5 -->
         <article class="article-card">
             <div class="card-header">
                 <span class="publisher-tag tag-gbaf">AMS Strategy</span>
             </div>
             <div class="card-body">
                 <h2 class="article-title">These would be the consequences of the closure of Audi and VW plants</h2>
-                <p class="article-excerpt">Mid-2026 manufacturing breakdown on site relocations, production shifts to Poland, and cost pressures facing German automotive hubs.</p>
+                <p class="article-excerpt">Mid-2026 manufacturing breakdown on site relocations, production shifts to Poland, and cost pressures.</p>
                 <a href="https://www.automotivemanufacturingsolutions.com/strategy/these-would-be-the-consequences-of-the-closure-of-audi-and-vw-plants/2689863" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
-        <!-- Article 6: CleanTechnica -->
+        <!-- Article 6 -->
         <article class="article-card">
             <div class="card-header">
                 <span class="publisher-tag tag-cnbc">CleanTechnica</span>
             </div>
             <div class="card-body">
                 <h2 class="article-title">Volkswagen Plans To Shutter Four Factories & Expand Job Cuts</h2>
-                <p class="article-excerpt">Detailed overview of the 2026 proposals to close core German plants and face intense union pushback amid the costly transition to electric vehicles.</p>
+                <p class="article-excerpt">Detailed overview of proposals to close core German plants and face intense union pushback amid EV transition costs.</p>
                 <a href="https://cleantechnica.com/2026/06/27/volkswagen-announces-plan-to-shutter-four-factories/" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
-        <!-- Article 7: Global Banking Factbox -->
+        <!-- Article 7 -->
         <article class="article-card">
             <div class="card-header">
                 <span class="publisher-tag tag-gbaf">GBAF Factbox</span>
             </div>
             <div class="card-body">
                 <h2 class="article-title">Volkswagen Considers Shutting Four Major Factories in Germany</h2>
-                <p class="article-excerpt">Fact-based breakdown of sites under review (Emden, Hanover, Neckarsulm, Zwickau) and their regional economic footprint in Lower Saxony.</p>
+                <p class="article-excerpt">Fact-based breakdown of sites under review (Emden, Hanover, Neckarsulm) and their regional economic footprint.</p>
                 <a href="https://www.globalbankingandfinance.com/factbox-which-volkswagen-factories-germany-shut-down/" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
-        <!-- Article 8: VW Group Official Press Release -->
+        <!-- Article 8 -->
         <article class="article-card">
             <div class="card-header">
                 <span class="publisher-tag tag-vw">VW Group Official</span>
             </div>
             <div class="card-body">
                 <h2 class="article-title">Oliver Blume presents key levers of plan for the future 2030</h2>
-                <p class="article-excerpt">Official corporate strategy roadmap detailing 8 core levers for transformation, capital discipline, and flexible ICE/BEV platform architectures.</p>
+                <p class="article-excerpt">Official corporate strategy roadmap detailing 8 core levers for transformation, capital discipline, and platform architectures.</p>
                 <a href="https://www.volkswagen-group.com/en/press-releases/strengthen-substance-invest-with-purpose-in-the-future-oliver-blume-presents-key-levers-of-plan-for-the-future-oliver-blume-presents-key-levers-of-plan-for-the-future-ang-ag-annual-general-meeting-20483" target="_blank" class="read-btn">Read Official Press Release ↗</a>
             </div>
         </article>
