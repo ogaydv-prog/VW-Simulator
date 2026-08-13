@@ -84,9 +84,9 @@
             display: inline-block;
             text-decoration: none;
             background: #ffffff;
-            border: 2px solid #e2e8f0; /* Серая каёмка в обычном состоянии */
+            border: 2px solid #e2e8f0;
             border-radius: 20px;
-            padding: 0; /* Убраны абсолютно все отступы */
+            padding: 0;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -97,15 +97,15 @@
         .card img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Картинка полностью заполняет всю площадь кнопки */
+            object-fit: cover;
             display: block;
             transition: transform 0.3s ease;
         }
 
-        /* Hover Effect: синяя каёмка и подъем карточки */
+        /* Hover Effect */
         .card:hover {
             transform: translateY(-8px) scale(1.03);
-            border-color: #001e50; /* Каёмка становится синей */
+            border-color: #001e50;
             box-shadow: 0 16px 30px rgba(0, 30, 80, 0.15);
         }
 
@@ -135,26 +135,26 @@
         <p class="subtitle">Interactive Learning Complex for Industrial Economics<br>Almaty Management University (AlmaU)</p>
     </header>
 
-    <!-- 5 Image Buttons with Tight Dynamic Border -->
+    <!-- 5 Image Buttons with New Order -->
     <main class="grid-container">
-        <!-- Button 1: Cases -->
+        <!-- Button 1: VW Story (Articles & Videos) -->
+        <a href="https://ogaydv-prog.github.io/ie-simulator-almau/articles.html" class="card" title="Articles & Videos">
+            <img src="https://ogaydv-prog.github.io/ie-simulator-almau/pic-story-vw.png" alt="Articles & Videos">
+        </a>
+
+        <!-- Button 2: Cases & Experience -->
         <a href="https://ogaydv-prog.github.io/ie-simulator-almau/cases.html" class="card" title="Cases & Experience">
             <img src="https://ogaydv-prog.github.io/ie-simulator-almau/pic-case-vw.png" alt="Cases & Experience">
         </a>
 
-        <!-- Button 2: Reports -->
-        <a href="https://ogaydv-prog.github.io/ie-simulator-almau/reports.html" class="card" title="Reports">
-            <img src="https://ogaydv-prog.github.io/ie-simulator-almau/pic-rep-vw.png" alt="Reports">
-        </a>
-
-        <!-- Button 3: Forecasts -->
+        <!-- Button 3: Forecasts & Reading Materials -->
         <a href="https://ogaydv-prog.github.io/ie-simulator-almau/forecasts.html" class="card" title="Forecasts & Dilemmas">
             <img src="https://ogaydv-prog.github.io/ie-simulator-almau/pic-read-vw.png" alt="Forecasts & Dilemmas">
         </a>
 
-        <!-- Button 4: Articles & Videos -->
-        <a href="https://ogaydv-prog.github.io/ie-simulator-almau/articles.html" class="card" title="Articles & Videos">
-            <img src="https://ogaydv-prog.github.io/ie-simulator-almau/pic-story-vw.png" alt="Articles & Videos">
+        <!-- Button 4: Reports -->
+        <a href="https://ogaydv-prog.github.io/ie-simulator-almau/reports.html" class="card" title="Reports">
+            <img src="https://ogaydv-prog.github.io/ie-simulator-almau/pic-rep-vw.png" alt="Reports">
         </a>
 
         <!-- Button 5: Simulator -->
@@ -165,7 +165,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© Almaty Management University | Department of Economics and Business Disciplines</p>
+        <p>© Almaty Management University | School of Digital Technologies & Economics </p>
     </footer>
 
 </body>
