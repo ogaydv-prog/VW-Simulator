@@ -22,7 +22,6 @@
             padding: 40px 20px;
         }
 
-        /* Top Navigation / Back Button */
         .top-bar {
             max-width: 1200px;
             width: 100%;
@@ -53,7 +52,6 @@
             border-color: #001e50;
         }
 
-        /* Header */
         header {
             text-align: center;
             margin-bottom: 45px;
@@ -86,7 +84,6 @@
             margin: 0 auto;
         }
 
-        /* Grid for 6 Articles */
         .articles-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -95,7 +92,6 @@
             width: 100%;
         }
 
-        /* Article Card Style */
         .article-card {
             background: #ffffff;
             border-radius: 16px;
@@ -132,6 +128,7 @@
         .tag-ft { background: #ffe0d0; color: #9e2a2b; }
         .tag-reuters { background: #ffedd5; color: #c2410c; }
         .tag-guardian { background: #dbeafe; color: #1e40af; }
+        .tag-euronews { background: #dcfce7; color: #15803d; }
         .tag-vw { background: #f1f5f9; color: #0f172a; }
 
         .card-body {
@@ -142,7 +139,7 @@
         }
 
         .article-title {
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 700;
             color: #0f172a;
             line-height: 1.35;
@@ -177,7 +174,6 @@
             background-color: #1d4ed8;
         }
 
-        /* Footer */
         footer {
             margin-top: auto;
             font-size: 13px;
@@ -189,7 +185,6 @@
 </head>
 <body>
 
-    <!-- Top Navigation Bar -->
     <div class="top-bar">
         <a href="https://ogaydv-prog.github.io/ie-simulator-almau/index.html" class="back-btn">
             ← Return to Dashboard
@@ -197,77 +192,99 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg" alt="VW Logo" style="height: 38px;">
     </div>
 
-    <!-- Header -->
     <header>
         <span class="badge">Industrial Economics Case Hub</span>
         <h1>Forecasts, Dilemmas & Global Media</h1>
         <p class="subtitle">Essential reading collection on Volkswagen Group's industrial restructuring, geopolitical headwinds, and competitive pressures.</p>
     </header>
 
-    <!-- 6 Article Cards Grid -->
     <main class="articles-grid">
 
-        <!-- Article 1: FT -->
+        <!-- Article 1: Euronews 1 -->
         <article class="article-card">
             <div class="card-header">
-                <span class="publisher-tag tag-ft">Financial Times</span>
+                <span class="publisher-tag tag-euronews">Euronews Business</span>
             </div>
             <div class="card-body">
-                <h2 class="article-title">Volkswagen’s restructuring battle and the high stakes of German plant closures</h2>
-                <p class="article-excerpt">Inside the high-stakes Supervisory Board negotiations led by CEO Oliver Blume, balancing restructuring goals against resistance from IG Metall and Lower Saxony.</p>
-                <a href="https://www.ft.com/content/volkswagen-restructuring-battle-plants" target="_blank" class="read-btn">Read Full Article ↗</a>
+                <h2 class="article-title">Volkswagen eyes radical overhaul with potential plant closures in Germany</h2>
+                <p class="article-excerpt">Euronews analysis on Volkswagen contemplating unprecedented German factory closures and workforce optimization to adapt to electric transition and rising costs.</p>
+                <a href="https://www.euronews.com/business/2024/09/02/volkswagen-considers-historic-german-factory-closures-in-cost-cutting-drive" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
-        <!-- Article 2: Reuters -->
+        <!-- Article 2: Euronews 2 -->
         <article class="article-card">
             <div class="card-header">
-                <span class="publisher-tag tag-reuters">Reuters</span>
+                <span class="publisher-tag tag-euronews">Euronews Policy</span>
             </div>
             <div class="card-body">
-                <h2 class="article-title">Volkswagen scraps revenue growth forecast as tariffs, China weigh</h2>
-                <p class="article-excerpt">Financial outlook adjustment detailing margin pressures in Q2, declining sales in the Asian region, and the financial impact of trade barriers.</p>
-                <a href="https://www.reuters.com/business/autos-transportation/volkswagen-scraps-revenue-growth-forecast-2024-07-26/" target="_blank" class="read-btn">Read Full Article ↗</a>
+                <h2 class="article-title">Volkswagen stakeholders urge immediate cost-cutting amid tariff pressures</h2>
+                <p class="article-excerpt">Coverage on major shareholders and institutional investors demanding swift strategic adjustments to counter trade tariffs and aggressive Chinese EV expansion.</p>
+                <a href="https://www.euronews.com/business/2024/09/04/volkswagen-shares-drop-as-investors-react-to-potential-german-plant-closures" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
-        <!-- Article 3: The Guardian -->
+        <!-- Article 3: Financial Times -->
         <article class="article-card">
             <div class="card-header">
-                <span class="publisher-tag tag-guardian">The Guardian</span>
+                <span class="publisher-tag tag-ft">Financial Analysis</span>
             </div>
             <div class="card-body">
-                <h2 class="article-title">The Guardian view on Volkswagen’s crisis: another wake-up call for Germany and the EU</h2>
-                <p class="article-excerpt">Editorial analysis examining how structural challenges at VW reflect broader European industrial policy vulnerabilities and climate regulation friction.</p>
-                <a href="https://www.theguardian.com/commentisfree/article/2024/sep/04/the-guardian-view-on-volkswagens-crisis-another-wake-up-call-for-germany-and-the-eu" target="_blank" class="read-btn">Read Full Article ↗</a>
+                <h2 class="article-title">Volkswagen’s restructuring battle and plant optimization strategies</h2>
+                <p class="article-excerpt">Comprehensive analysis of Supervisory Board negotiations led by CEO Oliver Blume, balancing restructuring goals against labor union resistance.</p>
+                <a href="https://theevreport.com/volkswagen-plan-for-the-future-2030-targets" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
         <!-- Article 4: Reuters -->
         <article class="article-card">
             <div class="card-header">
-                <span class="publisher-tag tag-reuters">Reuters</span>
+                <span class="publisher-tag tag-reuters">Reuters / Industry</span>
             </div>
             <div class="card-body">
-                <h2 class="article-title">Volkswagen’s controlling families weigh in on restructuring battle</h2>
-                <p class="article-excerpt">Key stance of Porsche SE and the Porsche/Piëch families backing management's push for decisive cost reductions and structural reforms.</p>
-                <a href="https://www.reuters.com/business/autos-transportation/porsche-piech-families-back-vw-management-restructuring-2024-09-08/" target="_blank" class="read-btn">Read Full Article ↗</a>
+                <h2 class="article-title">Volkswagen scraps revenue growth forecast as tariffs, China weigh</h2>
+                <p class="article-excerpt">Financial outlook adjustment detailing margin pressures, declining sales in the Asian region, and the financial impact of EU/US trade barriers.</p>
+                <a href="https://www.nada.org/nada/nada-headlines/volkswagen-brand-deliveries-fall-14-2024-reuters" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
-        <!-- Article 5: The Guardian -->
+        <!-- Article 5: The Guardian View -->
+        <article class="article-card">
+            <div class="card-header">
+                <span class="publisher-tag tag-guardian">The Guardian View</span>
+            </div>
+            <div class="card-body">
+                <h2 class="article-title">Volkswagen’s crisis: a wake-up call for Germany and the EU</h2>
+                <p class="article-excerpt">Editorial analysis examining how structural challenges at VW reflect broader European industrial policy vulnerabilities and trade disparities.</p>
+                <a href="https://www.cer.eu/in-the-press/guardian-view-volkswagen%E2%80%99s-crisis-another-wake-call-germany-and-eu" target="_blank" class="read-btn">Read Full Article ↗</a>
+            </div>
+        </article>
+
+        <!-- Article 6: Market Report -->
+        <article class="article-card">
+            <div class="card-header">
+                <span class="publisher-tag tag-reuters">Market Report</span>
+            </div>
+            <div class="card-body">
+                <h2 class="article-title">Volkswagen cuts outlook as car demand falters and costs rise</h2>
+                <p class="article-excerpt">Detailed market insights on revised annual profit margins, challenging macroeconomic conditions, and ongoing union negotiations.</p>
+                <a href="https://auto.economictimes.indiatimes.com/news/passenger-vehicle/volkswagen-cuts-outlook-as-car-demand-falters/113761017" target="_blank" class="read-btn">Read Full Article ↗</a>
+            </div>
+        </article>
+
+        <!-- Article 7: The Guardian Feature -->
         <article class="article-card">
             <div class="card-header">
                 <span class="publisher-tag tag-guardian">The Guardian</span>
             </div>
             <div class="card-body">
-                <h2 class="article-title">German car industry warns of job collapse unless ‘bold decisions’ made</h2>
-                <p class="article-excerpt">German Association of the Automotive Industry (VDA) warning regarding European plant overcapacity and cost competitiveness against rising Asian EV manufacturers.</p>
-                <a href="https://www.theguardian.com/business/article/2024/sep/02/volkswagen-plant-closures-germany-jobs" target="_blank" class="read-btn">Read Full Article ↗</a>
+                <h2 class="article-title">An 'earthquake' at Volkswagen – and a crisis for Germany</h2>
+                <p class="article-excerpt">Inside report on the historic threat of domestic plant closures in Germany, breaking 30-year employment pacts and worker reactions.</p>
+                <a href="https://www.theguardian.com/business/article/2024/sep/07/an-earthquake-at-volkswagen-and-a-crisis-for-germany" target="_blank" class="read-btn">Read Full Article ↗</a>
             </div>
         </article>
 
-        <!-- Article 6: VW Group Press -->
+        <!-- Article 8: VW Group Official -->
         <article class="article-card">
             <div class="card-header">
                 <span class="publisher-tag tag-vw">VW Group Official</span>
@@ -275,13 +292,12 @@
             <div class="card-body">
                 <h2 class="article-title">Oliver Blume presents key levers of plan for the future 2030</h2>
                 <p class="article-excerpt">Official manifesto outlining 8 core strategic levers for Volkswagen's transformation, investment discipline, and flexible ICE/BEV platform architectures.</p>
-                <a href="https://www.volkswagen-group.com/en/press-releases/strengthen-substance-invest-with-purpose-in-the-future-oliver-blume-presents-key-levers-of-plan-for-the-future-17382" target="_blank" class="read-btn">Read Official Press Release ↗</a>
+                <a href="https://www.volkswagen-group.com/en/press-releases/strengthen-substance-invest-with-purpose-in-the-future-oliver-blume-presents-key-levers-of-plan-for-the-future-oliver-blume-presents-key-levers-of-plan-for-the-future-ang-ag-annual-general-meeting-20483" target="_blank" class="read-btn">Read Official Press Release ↗</a>
             </div>
         </article>
 
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>© Almaty Management University | Department of Economics and Business Disciplines</p>
     </footer>
